@@ -1,3 +1,4 @@
+import { IsEmail } from 'class-validator';
 import { ApiProperty } from "@nestjs/swagger";
 
 
@@ -8,6 +9,15 @@ export class UserResponse{
           example: "32323-12309CJMDWD"  
       })
      public id: string;
+
+
+   
+     constructor(id:string) {
+
+        this.id= id
+       
+        
+     }
 
 
 
